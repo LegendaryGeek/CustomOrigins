@@ -122,6 +122,16 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+
+    maven {
+		url = "https://jitpack.io"
+	}
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
 dependencies {
@@ -131,6 +141,8 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    implementation fg.deobf("com.github.Virtuoel:Pehkui:${pehkui_version}")
+    implementation fg.deobf("curse.maven:origins-forge-474438:5314165")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
