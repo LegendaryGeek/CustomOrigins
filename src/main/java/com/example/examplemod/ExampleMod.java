@@ -27,7 +27,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
-import io.github.edwinmindcraft.apoli.api.power.factory;
 
 
 // The value here should match an entry in the META-INF/mods.toml file

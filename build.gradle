@@ -115,27 +115,39 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-
     maven {
 		url "https://jitpack.io"
 	}
-    maven {
-        url "https://maven.ladysnake.org/releases"
-    }
     maven {
         url "https://cursemaven.com"
         content {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        url "https://maven.merchantpug.net"
+    }
+    maven {
+        url "https://maven.ladysnake.org/releases"
+    }
 }
 
 dependencies {
+    // ./gradlew dependencies
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation fg.deobf("com.github.Virtuoel:Pehkui:${minecraft_version}-${pehkui_version}")
-    implementation fg.deobf("io.github.edwinmindcraft:calio-forge:${minecraft_version}-${calio_forge_version}")
-    implementation fg.deobf("io.github.edwinmindcraft:apoli-forge:${minecraft_version}-${apoli_forge_version}")
-    implementation fg.deobf("io.github.edwinmindcraft:origins-forge:${minecraft_version}-${origins_forge_version}")
+    implementation fg.deobf("com.github.Virtuoel:Pehkui:${pehkui_version}")
+
+    // https://www.curseforge.com/minecraft/mc-mods/origins-forge/files/5314165
+    implementation fg.deobf("curse.maven:origins-forge-474438:5314165")
+
+    // https://www.curseforge.com/minecraft/mc-mods/caelus/files/3929284
+    implementation fg.deobf("curse.maven:apoli-forge-975561:5404012")
+
+    // https://www.curseforge.com/minecraft/mc-mods/apoli-forge/files/5404012
+
+    //implementation fg.deobf("io.github.edwinmindcraft:calio-forge:${minecraft_version}-${calio_forge_version}")
+    //implementation fg.deobf("io.github.edwinmindcraft:apoli-forge:${minecraft_version}-${apoli_forge_version}")
+    //implementation fg.deobf("io.github.edwinmindcraft:origins-forge:${minecraft_version}-${origins_forge_version}")
 }
 
 tasks.named('processResources', ProcessResources).configure {
