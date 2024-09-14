@@ -28,7 +28,7 @@ import org.slf4j.Logger;
 @Mod(CustomOrigins.MODID)
 public class CustomOrigins
 {
-    public static final String MODID = "customorigins"
+    public static final String MODID = "customorigins";
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
