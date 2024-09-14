@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.github.legendarygeek.customorigins;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
