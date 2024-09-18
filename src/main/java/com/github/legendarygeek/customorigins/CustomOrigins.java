@@ -1,5 +1,6 @@
 package com.github.legendarygeek.customorigins;
 
+import com.github.legendarygeek.customorigins.data.ModData;
 import com.github.legendarygeek.customorigins.registry.ModBlocks;
 import com.github.legendarygeek.customorigins.registry.ModItems;
 import com.mojang.logging.LogUtils;
@@ -40,6 +41,9 @@ public class CustomOrigins
 
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
+
+        ModData.initialize();
+
         MinecraftForge.EVENT_BUS.register(this);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);

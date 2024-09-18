@@ -26,7 +26,7 @@ import java.util.UUID;
 public class PowerProvider extends PowerGenerator {
 
 
-    protected PowerProvider(DataGenerator generator, String modid, ExistingFileHelper existingFileHelper) {
+    public PowerProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
         super(generator, CustomOrigins.MODID, existingFileHelper);
     }
 
