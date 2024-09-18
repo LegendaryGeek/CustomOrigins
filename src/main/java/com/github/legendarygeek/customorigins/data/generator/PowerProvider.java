@@ -32,14 +32,14 @@ public class PowerProvider extends PowerGenerator {
 
     private void makeInchlingPowers() {
         PowerData hidden = PowerData.builder().hidden().build();
-        this.add("small_sized", ApoliPowers.MODIFY_EXHAUSTION.get().configure(
+        this.add("small_appetite", ApoliPowers.MODIFY_EXHAUSTION.get().configure(
                 new ValueModifyingPowerConfiguration(ListConfiguration.of(
                         ModifierUtil.fromAttributeModifier(new AttributeModifier("Small size, less food exaustion", -0.75, AttributeModifier.Operation.MULTIPLY_BASE))
                 )), PowerData.DEFAULT));
     }
 
-    //@Override
+    @Override
     protected void populate() {
-
+    this.makeInchlingPowers();
     }
 }
