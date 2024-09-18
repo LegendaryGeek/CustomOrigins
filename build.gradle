@@ -124,11 +124,15 @@ repositories {
             includeGroup "curse.maven"
         }
     }
-    maven {
-        url "https://maven.merchantpug.net"
-    }
+//    maven {
+//        url "https://maven.merchantpug.net"
+//    }
     maven {
         url "https://maven.ladysnake.org/releases"
+    }
+    maven {
+        name = 'C4\'s Maven'
+        url = "https://maven.theillusivec4.top/"
     }
 }
 
@@ -142,6 +146,9 @@ dependencies {
 
     // https://www.curseforge.com/minecraft/mc-mods/caelus/files/3929284
     implementation fg.deobf("curse.maven:apoli-forge-975561:5404012")
+
+    runtimeOnly "top.theillusivec4.caelus:caelus-forge:${minecraft_version}-${caelus_version}"
+    compileOnly "top.theillusivec4.caelus:caelus-forge:${minecraft_version}-${caelus_version}:api"
 
     // https://www.curseforge.com/minecraft/mc-mods/apoli-forge/files/5404012
 
