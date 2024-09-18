@@ -147,8 +147,8 @@ dependencies {
     // https://www.curseforge.com/minecraft/mc-mods/caelus/files/3929284
     implementation fg.deobf("curse.maven:apoli-forge-975561:5404012")
 
-    runtimeOnly "top.theillusivec4.caelus:caelus-forge:${minecraft_version}-${caelus_version}"
-    compileOnly "top.theillusivec4.caelus:caelus-forge:${minecraft_version}-${caelus_version}:api"
+    runtimeOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:${minecraft_version}-${caelus_version}")
+    compileOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:${minecraft_version}-${caelus_version}:api")
 
     // https://www.curseforge.com/minecraft/mc-mods/apoli-forge/files/5404012
 
