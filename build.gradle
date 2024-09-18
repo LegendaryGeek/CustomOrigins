@@ -145,6 +145,9 @@ dependencies {
 
     // https://www.curseforge.com/minecraft/mc-mods/apoli-forge/files/5404012
 
+    //https://www.curseforge.com/minecraft/mc-mods/calio/files/5404013
+    implementation fg.deobf("curse.maven:calio-977891:5404013")
+
     //implementation fg.deobf("io.github.edwinmindcraft:calio-forge:${minecraft_version}-${calio_forge_version}")
     //implementation fg.deobf("io.github.edwinmindcraft:apoli-forge:${minecraft_version}-${apoli_forge_version}")
     //implementation fg.deobf("io.github.edwinmindcraft:origins-forge:${minecraft_version}-${origins_forge_version}")
